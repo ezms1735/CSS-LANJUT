@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Belajar CSS Grid 2</title>
+        <link rel="icon" type="png" href="icon.png" sizes="16x16"/>
+    </head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 50px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgba(255, 255, 2555, 0.8);
+            padding: 20px;
+        }
+        .item {
+            background-color: rgba(255, 255, 2555, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <div class="grid-container">
+            <div class="item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+        <div><b>Keismpulan: </b> Uji coba ini kita menambahkan 3 class yaitu, .grid-container, .item1, .item.<br/>
+                                1. Class .grid-container adalah sebauh kelas yang diberikan kepada elem yang akan diatur sebagai grid container.<br/>
+                                2. Class .item1 dan class .item adalah sebuah kelas yang diberikan kepada salah satu elemen dalam grid.
+            <br/><b>Kesimpulan Skenario 1 adalah:</b> Uji coba ini kita menambahkan kode grid-template-colums: auto auto auto auto; pada class grid-container. Ini digunakan untuk menentukan lebar kolom untuk grid container, nilai auto ini digunakan untuk setiap kolom yang berarti lebar akan disesuaikan secara otomatis sesuai dengan konten didalamnya. Kemudian ubah menjadi auto auto;, 70px 300px auto 40px;, dan 10px 500px 20px 10px;. Jika nilai nya bukan auto berarti lebar akan sesuai dengan ukuran yang sudah ditentukan.<br/>
+        </div>
+        </div>
+    </body>
+</html>

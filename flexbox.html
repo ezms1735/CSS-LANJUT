@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Belajar Flex Box</title>
+        <link rel="icon" type="png" href="icon.png" sizes="16x16" />
+    <style>
+        .wadah_flex {
+            display: flex;
+            background-color: cornflowerblue;
+            flex-flow: row wrap;
+            justify-content: center;
+            flex-flow: row wrap;
+        }
+        .wadah_flex > div {
+            background-color: antiquewhite;
+            margin: 10px;
+            padding: 5px;
+            font-size: 30px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="wadah_flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
+        <p><b>Kesimpulan skenario 1 adalah :</b> Pada skenario ini saya menambahkan background-color berwarna cornflowerblue.</p>
+        <p><b>Kesimpulan skenario 2 adalah :</b> Pada skenario ini saya menambahkan style css ".wadah_flex > div" yang berisikan background-color berwarna antiquewhite, margin 10px, padding 5px, dan font-size 3-px.</p>
+        <p><b>Kesimpulan skenario 3 adalah :</b> Pada skenario ini saya menambahkan flex-direction.<br/>
+            1. flex-direction:column, elemen ini akan diatur secara vertikal yaitudari atas ke bawah. Dimulai dari nomer 1 - 12. <br/>
+            2. flex-direction:column-reverse, sama seperti tipe column, tetapi pada tipe column reverse nomor akan diatur terbalik, yaitu mulai dari angka 12-1. <br/>
+            3. flex-direction:row, elemen ini akan diatur secara horizontal yaitu dari kiri ke kanan. Dimulai dari no 1 - 12. <br/>
+            4. flex-direction:row-reverse, sama seperti tipe column, tetapi pada tipe row reverse nomor akan diatur terbalik, yaitu mulai dari angka 12 - 1..</p>
+        <p><b>Kesimpulan skenario 4 adalah :</b> Pada skenario ini saya menghapus flex-direction pada skenario 3 dan merubahnya menjadi flex-wrap.<br/>
+            1. flex-wrap:nowrap, jika ruang dalam flex tidak mencukupi, maka konten tetap akan diatur dalam satu baris atau satu kolom (tanpa wrapping) <br/>
+            2. flex-wrap:wrap, jika ruang dalam fle tidak mencukupi, maka konten akan memulai wrapping yaitu akan terdapat baris baru untuk menampung konten yang tidak termuat dalam ruang tsb. <br/>
+            3. flex-wrap:wrap-reverse, fungsinya sama seperti tipe wrap, tetapi konten akan diatur dengan urutan terbalik. Semisal pada wrap kontennya adalah 1-12, maka wi wrap-reverse adalah 12-1.</p>
+        <p><b>Kesimpulan skenario 5 adalah :</b> Pada skenario ini saya menghapus flex-wrap pada skenario 4 dan menggantinya menjadi flex-flow.<br/>
+            1. flex-flow:row wrap, artinya konten diatur flex-direction:row dan flex-wrap:wrap. Hasilnya adalah konten akan ditampilkan secara horizontal dari kiri ke kanan dengan adanya wrapping.<br/>
+            2. flex-flow: column, digunakan untuk mengatur arah alur item-item di dalam container flexbox menjadi kolom atau vertikal, yaitu dari atas ke bawah atau sebaliknya. Dengan menggunakan nilai ini, item-item akan ditata dalam kolom secara vertikal.<br/>
+            3. flex-flow: row, digunakan untuk mengatur arah alur item-item di dalam container flexbox menjadi baris atau horizontal, yaitu dari kiri ke kanan atau sebaliknya. Dengan menggunakan nilai ini, item-item akan ditata dalam baris secara horizontal.</p>
+        <p><b>Kesimpulan skenario 6 adalah :</b> Pada skenario ini saya menambahkan  justify-content.<br/>
+            1. justify-content:center, konten akan ditempatkan di tengah.<br/>
+            2. justify-content:end, Pada tata letak horizontal, konten akan disusun ke kanan, dan pada tata letak vertikal, item akan disusun ke bawah.</p>
+    </body>
+</html>

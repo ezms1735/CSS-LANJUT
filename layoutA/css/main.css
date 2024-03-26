@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif, "Book Antique";
+    background-color: gray;
+    margin: 0px;
+    padding: 1px;
+    border: black solid;
+    height: 99vh;
+    width: 99vw;
+}
+div {
+    border: black solid;
+}
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 35px 55px auto 100px 35px;
+}
+.duwurdewe {
+    grid-row: 1;
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 2px 0px 0px; 
+    padding-left: 0px;
+    background-color: lightslategray;
+    color: white;
+}
+.duwurdewe img {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+}
+.duwurdewe div {
+    text-align: center;
+    position: relative;
+}
+header {
+    grid-row: 2;
+    grid-column: 1/4;
+    display: flex;
+    background-color: lightsteelblue;
+}
+.logo {
+    width: 30%;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 5px;
+}
+.logo img {
+    display: block;
+    margin: auto;
+}
+nav {
+    width: 70%;
+    display: flex;
+    background-color: lightsteelblue;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn {
+    display: flex;
+    flex-direction: row;
+}
+li {
+    list-style-type: none;
+    padding: 0px 10px 0px 10px;
+}
+a {
+    text-decoration: none;
+}
+.content {
+    grid-row: 3;
+    grid-column: 1/4;
+}
+.footer{
+    grid-row: 5;
+    grid-column: 1/4;
+}

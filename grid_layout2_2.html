@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Belajar CSS Grid 2</title>
+        <link rel="icon" type="png" href="icon.png" sizes="16x16"/>
+    </head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 50px;
+            background-color: #2196F3;
+            grid-template-columns: auto auto auto auto;
+            padding: 10px;
+        }
+        .item1 {
+            background-color: rgba(255, 255, 2555, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            grid-column: 1/4;
+        }
+        .item {
+            background-color: rgba(255, 255, 2555, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <div class="grid-container">
+            <div class="item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+        <div>
+            <b>Keismpulan: </b> Uji coba ini kita menambahkan 3 class yaitu, .grid-container, .item1, .item.<br/>
+                                1. Class .grid-container adalah sebauh kelas yang diberikan kepada elem yang akan diatur sebagai grid container.<br/>
+                                2. Class .item1 dan class .item adalah sebuah kelas yang diberikan kepada salah satu elemen dalam grid.
+            <br/><b>Kesimpulan Skenario 1 adalah: </b>Uji coba ini kita menambhakan grid-row: 1/4; pada class item1. Ini digunakan untuk menentukan posisi baris suatu elemen di dalalm grid container class item1, nilai 1/4 ini menunjukkan bahwa elemen tersebut akank mulai dari baris pertama dan terakhir sebelum baris keempat.
+            <br/><b>Kesimpulan Skenario 2 adalah: </b>Uji coba ini kita menghapus uji coba 1 dan menggantinya menjadi grid-column: 1/4;. Ini digunakan untuk menentukanposisi kolom suatu elemen di dalam grid container class item1, nilai 1/4 ini menunjukkanbahwa elemen tersebut akan mulai dari kolom pertama dan terakhir sebelumkolomm keempat.
+        </div>
+        </div>
+    </body>
+</html>
